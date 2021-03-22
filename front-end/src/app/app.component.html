@@ -1,0 +1,11 @@
+<form style="display: flex; flex-direction: row;"   [formGroup]="form">
+  <label for="email">Enter DNS Records</label>
+  <input type="email" class="form-control" formControlName = "records">
+  
+</form>
+<button (click)="onSubmit()">Reset</button>
+
+<br>
+<label >Note: Enter Records seperated by commas</label>
+
+<h3> {{ someError }} </h3>
